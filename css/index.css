@@ -1,1 +1,53 @@
-/* nothing yet */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.redirect-logo {
+  font-weight: 600;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  transform: translateY(0.5px); /* slight fudge factor for vertical alignment */
+}
+
+@media (max-width: 399px) {
+  nav {
+    width: auto;
+  }
+
+  .redirect-logo,
+  .work-link {
+    margin-right: 20px;
+  }
+
+  .nav-items {
+    justify-content: flex-start;
+  }
+}
