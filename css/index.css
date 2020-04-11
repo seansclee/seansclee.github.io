@@ -1,3 +1,10 @@
+hr {
+  margin-inline-start: 0;
+  width: 45px;
+  border-top-width: 1px;
+  border-top-color: inherit;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -20,34 +27,44 @@ nav a {
   text-decoration: none;
 }
 
-.redirect-logo {
+.nav-logo {
   font-weight: 600;
 }
 
 .nav-items {
-  display: flex;
-  justify-content: space-between;
-  width: 150px;
+  width: 260px;
 }
 
+.nav-items,
 .nav-icons {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+}
+
+.nav-icons {
+  width: 35%;
   transform: translateY(0.5px); /* slight fudge factor for vertical alignment */
 }
 
-@media (max-width: 399px) {
-  nav {
-    width: auto;
-  }
-
-  .redirect-logo,
-  .work-link {
-    margin-right: 20px;
-  }
-
+/* below tablet res */
+@media (max-width: 767px) {
   .nav-items {
-    justify-content: flex-start;
+    width: 220px;
+  }
+}
+
+/* below skeleton's definition of 'mobile' */
+@media (max-width: 399px) {
+  .nav-items {
+    position: absolute;
+    left: 115px;
+  }
+
+  .nav-icons {
+    width: 45%;
+  }
+
+  .nav-link {
+    display: none;
   }
 }
