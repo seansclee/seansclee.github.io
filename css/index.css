@@ -86,11 +86,11 @@ img {
   margin-right: 8px;
 }
 
-footer {
+footer,
+.footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
 }
 
 footer hr {
@@ -105,6 +105,10 @@ footer h5 {
   display: flex;
   justify-content: space-between;
   width: 110px;
+}
+
+.footer-content {
+  margin: 250px 0;
 }
 
 .copyright {
