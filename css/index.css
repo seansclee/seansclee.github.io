@@ -32,7 +32,7 @@ nav a {
 }
 
 .nav-items {
-  width: 260px;
+  width: 250px;
 }
 
 .nav-items,
@@ -42,18 +42,22 @@ nav a {
 }
 
 .nav-icons {
-  width: 35%;
+  width: 33.3333333333%;
   transform: translateY(0.5px); /* slight fudge factor for vertical alignment */
 }
 
-/* below tablet res */
-@media (max-width: 767px) {
+/* below 'phablet' res */
+@media (max-width: 549px) {
   .nav-items {
-    width: 220px;
+    width: 215px;
+  }
+
+  .nav-icons {
+    width: 40%;
   }
 }
 
-/* below skeleton's definition of 'mobile' */
+/* below 'mobile' res */
 @media (max-width: 399px) {
   .nav-items {
     position: absolute;
@@ -67,4 +71,43 @@ nav a {
   .nav-link {
     display: none;
   }
+}
+
+img {
+  width: 100%;
+}
+
+.work-content-header {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.work-content-links a:first-of-type {
+  margin-right: 8px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+footer hr {
+  margin-inline-start: auto;
+}
+
+footer h5 {
+  margin-bottom: 15px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+}
+
+.copyright {
+  margin-top: 25px;
+  margin-bottom: 15px;
 }

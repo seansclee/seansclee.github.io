@@ -22,6 +22,10 @@
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/index.css" />
@@ -36,7 +40,12 @@
       src="https://kit.fontawesome.com/1c49bf1cc2.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Scroll Reveal
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </head>
+
   <body>
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -45,36 +54,47 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
       <nav class="nav">
-        <a class="nav-logo" href="">seanlee.dev</a>
+        <a class="nav-logo nav-element" href="">seanlee.dev</a>
         <div class="nav-items">
-          <a class="nav-link" href="#bio">Bio</a>
-          <a class="nav-link" href="#work">Work</a>
+          <a class="bio nav-link nav-element" href="#bio">Bio</a>
+          <a class="work nav-link nav-element" href="#work">Work</a>
           <div class="nav-icons">
-            <a href=""><i class="fab fa-linkedin-in"></i></a>
-            <a href=""><i class="fab fa-github"></i></a>
-            <a href=""><i class="fas fa-paper-plane"></i></a>
+            <a class="linkedin nav-icon-link nav-element" href=""
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a class="github nav-icon-link nav-element" href=""
+              ><i class="fab fa-github"></i
+            ></a>
+            <a class="email nav-icon-link nav-element" href=""
+              ><i class="fas fa-envelope"></i
+            ></a>
           </div>
         </div>
       </nav>
-      <div class="row">
-        <div class="one-half column" style="margin-top: 25%;">
-          <img class="profile-pic u-max-full-width" src="images/headshot.jpg" />
+      <div id="header" class="row">
+        <div class="one-half column header-column" style="margin-top: 20%;">
+          <img
+            class="profile-pic u-max-full-width header-content"
+            src="images/headshot.jpg"
+          />
         </div>
-        <div class="one-half column" style="margin-top: 25%;">
-          <h4 id="heading"></h4>
-          <p>
-            I'm Sean. I'm a software developer based in New Jersey. Check out
-            some of my
-            <a href="">work</a>.
-          </p>
+        <div class="one-half column header-column" style="margin-top: 20%;">
+          <div class="header-content">
+            <h4 id="heading"></h4>
+            <p>
+              I'm Sean. I'm a software developer based in New Jersey. Check out
+              some of my
+              <a href="">work</a>.
+            </p>
+          </div>
           <p></p>
         </div>
       </div>
 
       <!-- Bio
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div id="bio" class="row">
-        <div class="nine columns" style="margin-top: 25%;">
+      <div class="row">
+        <div class="bio-content nine columns" style="margin-top: 25%;">
           <hr />
           <h5>
             More about me
@@ -93,8 +113,8 @@
 
       <!-- Work
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div id="work" class="row">
-        <div class="nine columns" style="margin-top: 25%;">
+      <div class="row">
+        <div class="work-content nine columns" style="margin-top: 25%;">
           <hr />
           <h5>
             Some of my work
@@ -105,57 +125,48 @@
       <!-- Work - work1
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="row">
-        <div class="five columns" style="margin-top: 20px;">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="seven columns" style="margin-top: 20px;">
+        <div class="work-content five columns"  style="margin-top: 10px;">
           <img class="u-max-full-width" src="images/headshot.jpg" />
+        </div>
+        <div class="work-content seven columns"  style="margin-top: 10px;">
+          <h5 class="work-content-header">zoetispetcare.com</h5>
+          <span class="work-content-links"
+            ><a href="https://www.zoetispetcare.com/">Link</a
+            ><a href="https://www.zoetispetcare.com/">Source</a></span
+          >
+          <p></p>
         </div>
       </div>
 
       <!-- Work - work2
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="row">
-        <div class="five columns" style="margin-top: 20px;">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="seven columns" style="margin-top: 20px;">
+        <div class="work-content five columns" style="margin-top: 75px;">
           <img class="u-max-full-width" src="images/headshot.jpg" />
+        </div>
+        <div class="work-content seven columns" style="margin-top: 75px;">
+          <h5 class="work-content-header">workbook.healthywaytogrow.org</h5>
+          <span class="work-content-links"
+            ><a href="https://www.zoetispetcare.com/">Link</a
+            ><a href="https://www.zoetispetcare.com/">Source</a></span
+          >
+          <p></p>
         </div>
       </div>
 
       <!-- Work - work3
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="row">
-        <div class="five columns" style="margin-top: 20px;">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="seven columns" style="margin-top: 20px;">
+        <div class="work-content five columns" style="margin-top: 75px;">
           <img class="u-max-full-width" src="images/headshot.jpg" />
+        </div>
+        <div class="work-content seven columns" style="margin-top: 75px;">
+          <h5 class="work-content-header">alacritylearn.com</h5>
+          <span class="work-content-links"
+            ><a href="https://www.zoetispetcare.com/">Link</a
+            ><a href="https://www.zoetispetcare.com/">Source</a></span
+          >
+          <p></p>
         </div>
       </div>
 
@@ -163,10 +174,31 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
       <footer>
-        <hr />
-        <p>&copy;<span id="year"></span> Sean Lee</p>
+        <hr>
+        <h5>Let's build something together.</h5>
+        <p>Currently taking on freelance jobs. For inquiries shoot me an email :)</p>
+        <div class="footer-icons">
+          <a class="linkedin footer-icon-link" href=""
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a class="github footer-icon-link" href=""
+            ><i class="fab fa-github"></i
+          ></a>
+          <a class="email footer-icon-link" href=""
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+        <p class="copyright">&copy;<span id="year"></span> Sean Lee</p>
       </footer>
     </div>
+
+    <script>
+      ScrollReveal().reveal(".nav-element", { delay: 200, interval: 200 });
+      ScrollReveal().reveal(".header-content", { delay: 1500 });
+      ScrollReveal().reveal(".bio", { delay: 200 });
+      ScrollReveal().reveal(".work-element", { delay: 200, interval: 200 });
+      ScrollReveal().reveal("footer", { delay: 200 });
+    </script>
 
     <!-- Javascript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
