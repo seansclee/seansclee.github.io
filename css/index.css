@@ -108,10 +108,16 @@ footer h5 {
 }
 
 .footer-content {
-  margin: 250px 0;
+  justify-content: center;
+  height: 100vh;
 }
 
 .copyright {
-  margin-top: 25px;
-  margin-bottom: 15px;
+  position: absolute;
+  margin: 0;
+  bottom: 12px;
+}
+
+.section-container {
+  height: 100vh;
 }
