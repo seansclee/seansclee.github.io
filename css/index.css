@@ -29,6 +29,7 @@ nav a {
 
 .nav-logo {
   font-weight: 600;
+  font-size: 18px;
 }
 
 .nav-items {
@@ -73,13 +74,34 @@ nav a {
   }
 }
 
+.header-column:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-content p {
+  font-size: 17px;
+}
+
 img {
   width: 100%;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px 0px #373737;
+}
+
+.header-content p,
+.bio-content p {
+  line-height: 2;
 }
 
 .work-content-header {
-  font-size: 21px;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
+}
+
+.work-content-url {
+  font-size: 17px;
+  margin-bottom: 8px;
 }
 
 .work-content-links a:first-of-type {
@@ -94,12 +116,23 @@ footer {
   height: 100vh;
 }
 
-footer hr {
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content hr {
   margin-inline-start: auto;
 }
 
-footer h5 {
+.footer-content h5 {
   margin-bottom: 15px;
+}
+
+.footer-content p {
+  text-align: center;
 }
 
 .footer-icons {
@@ -119,4 +152,73 @@ footer h5 {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+}
+
+/* Scroll Button */
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+.disabled {
+  display: none;
+}
+
+.scroll-button-container {
+  position: fixed;
+  bottom: 75px;
+  left: 50%;
+}
+
+.scroll-button {
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.scroll-button span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid rgb(34, 34, 34);
+  border-bottom: 1px solid rgb(34, 34, 34);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
 }

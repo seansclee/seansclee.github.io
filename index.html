@@ -24,7 +24,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
@@ -55,7 +55,7 @@
     <div class="container">
       <div class="section-container">
         <nav class="nav">
-          <a class="nav-logo nav-element" href="">seanlee.dev</a>
+          <a class="nav-logo nav-element" href="">Sean Lee</a>
           <div class="nav-items">
             <a class="bio nav-link nav-element" href="#bio">Bio</a>
             <a class="work nav-link nav-element" href="#work">Work</a>
@@ -72,7 +72,7 @@
             </div>
           </div>
         </nav>
-        <div id="header" class="row">
+        <div class="row">
           <div class="one-half column header-column">
             <img
               class="profile-pic u-max-full-width header-content"
@@ -81,11 +81,12 @@
           </div>
           <div class="one-half column header-column">
             <div class="header-content">
-              <h4 id="heading"></h4>
+              <h3 id="heading"></h3>
               <p>
-                I'm Sean. I'm a software developer based in New Jersey. Check
-                out some of my
-                <a href="">work</a>.
+                I'm Sean. I'm a <a href="https://i.imgur.com/18c9Wg2.jpg" target="_blank" rel="noopener noreferrer">software developer</a> based in New Jersey.
+                I'm all about building good-looking websites, 
+                writing clean code, and exploring the latest and greatest in 
+                web development technologies. 
               </p>
             </div>
             <p></p>
@@ -93,9 +94,16 @@
         </div>
       </div>
 
+      <!-- Scroll Button
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+      <div id="scroll-button" class="scroll-button-container animate__animated animate__fadeIn">
+        <a class="scroll-button" href="#bio"><span></span></a>
+      </div>
+
       <!-- Bio
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div class="row">
+      <div id="bio" class="row">
         <div class="section-container">
           <div class="bio-content nine columns">
             <hr />
@@ -103,13 +111,7 @@
               More about me
             </h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Copy
             </p>
           </div>
         </div>
@@ -117,7 +119,7 @@
 
       <!-- Work
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div class="row">
+      <div id="work" class="row">
         <div class="work-content nine columns">
           <hr />
           <h5>
@@ -129,26 +131,22 @@
       <!-- Work - work1
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="row">
-        <div class="work-content five columns" style="margin-top: 10px;">
-          <img class="u-max-full-width" src="images/headshot.jpg" />
+        <div class="work-content one-half column" style="margin-top: 10px;">
+          <img class="u-max-full-width" src="images/zoetis-petcare-screenshot.png" />
         </div>
-        <div class="work-content seven columns" style="margin-top: 10px;">
-          <h5 class="work-content-header">zoetispetcare.com</h5>
-          <span class="work-content-links"
-            ><a href="https://www.zoetispetcare.com/">Link</a
-            ><a href="https://www.zoetispetcare.com/">Source</a></span
-          >
-          <p></p>
+        <div class="work-content one-half column" style="margin-top: 10px;">
+          <h5 class="work-content-header">Zoetis Petcare</h5>
+          <a class="work-content-url" href="https://www.zoetispetcare.com/" target="_blank" rel="noopener noreferrer">zoetispetcare.com</a>
         </div>
       </div>
 
       <!-- Work - work2
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="row">
-        <div class="work-content five columns" style="margin-top: 75px;">
-          <img class="u-max-full-width" src="images/headshot.jpg" />
+        <div class="work-content one-half column" style="margin-top: 75px;">
+          <img class="u-max-full-width" src="images/hwtg-workbook-screenshot.png" />
         </div>
-        <div class="work-content seven columns" style="margin-top: 75px;">
+        <div class="work-content one-half column" style="margin-top: 75px;">
           <h5 class="work-content-header">workbook.healthywaytogrow.org</h5>
           <span class="work-content-links"
             ><a href="https://www.zoetispetcare.com/">Link</a
@@ -161,10 +159,10 @@
       <!-- Work - work3
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="row">
-        <div class="work-content five columns" style="margin-top: 75px;">
-          <img class="u-max-full-width" src="images/headshot.jpg" />
+        <div class="work-content one-half column" style="margin-top: 75px;">
+          <img class="u-max-full-width" src="images/alacrity-screenshot.png" />
         </div>
-        <div class="work-content seven columns" style="margin-top: 75px;">
+        <div class="work-content one-half column" style="margin-top: 75px;">
           <h5 class="work-content-header">alacritylearn.com</h5>
           <span class="work-content-links"
             ><a href="https://www.zoetispetcare.com/">Link</a
@@ -177,22 +175,24 @@
       <!-- Footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-      <footer>
-        <hr />
-        <h5>Let's build something together.</h5>
-        <p>
-          Currently taking on freelance jobs. For inquiries shoot me an email :)
-        </p>
-        <div class="footer-icons">
-          <a class="linkedin footer-icon-link" href=""
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a class="github footer-icon-link" href=""
-            ><i class="fab fa-github"></i
-          ></a>
-          <a class="email footer-icon-link" href=""
-            ><i class="fas fa-envelope"></i
-          ></a>
+      <footer id="footer">
+        <div class="footer-content">
+          <hr />
+          <h5>Let's build something together.</h5>
+          <p>
+            Currently taking on freelance jobs. For inquiries shoot me an email :)
+          </p>
+          <div class="footer-icons">
+            <a class="linkedin footer-icon-link" href=""
+              ><i class="fab fa-linkedin-in fa-lg"></i
+            ></a>
+            <a class="github footer-icon-link" href=""
+              ><i class="fab fa-github fa-lg"></i
+            ></a>
+            <a class="email footer-icon-link" href=""
+              ><i class="fas fa-envelope fa-lg"></i
+            ></a>
+          </div>
         </div>
         <p class="copyright">&copy;<span id="year"></span> Sean Lee</p>
       </footer>
@@ -201,9 +201,10 @@
     <script>
       ScrollReveal().reveal(".nav-element", { delay: 200, interval: 200 });
       ScrollReveal().reveal(".header-content", { delay: 1500 });
-      ScrollReveal().reveal(".bio", { delay: 200 });
-      ScrollReveal().reveal(".work-element", { delay: 200, interval: 200 });
-      ScrollReveal().reveal("footer", { delay: 200 });
+      ScrollReveal().reveal(".bio-content", { delay: 200 });
+      ScrollReveal().reveal(".work-content", { delay: 200, interval: 200 });
+      ScrollReveal().reveal(".footer-content", { delay: 200 });
+      ScrollReveal().reveal(".copyright", { delay: 200 });
     </script>
 
     <!-- Javascript
