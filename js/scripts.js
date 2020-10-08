@@ -8,8 +8,8 @@ let greeting =
   timeOfDay < 12
     ? "Hello world, good morning"
     : timeOfDay < 17
-      ? "Hello world, afternoon"
-      : "Hello world, good evening";
+    ? "Hello world, afternoon"
+    : "Hello world, good evening";
 
 // generate random number to be used for probability
 const random = Math.random();
@@ -43,17 +43,23 @@ document.getElementById("year").innerHTML = fullYear;
 const scrollButton = document.getElementById("scroll-button");
 
 const applyTopOfPageClass = () => {
-  if (window.scrollY !== 0 && scrollButton.classList.contains("animate__fadeIn")) {
-    console.log('not top')
+  if (
+    window.scrollY !== 0 &&
+    scrollButton.classList.contains("animate__fadeIn")
+  ) {
+    console.log("not top");
     scrollButton.classList.remove("animate__fadeIn");
     scrollButton.classList.add("animate__fadeOut");
     setTimeout(() => scrollButton.classList.add("disabled"), 1000);
-  } else if (window.scrollY === 0 && !scrollButton.classList.contains("animate__fadeIn")) {
-    console.log('top')
+  } else if (
+    window.scrollY === 0 &&
+    !scrollButton.classList.contains("animate__fadeIn")
+  ) {
+    console.log("top");
     scrollButton.classList.remove("animate__fadeOut", "disabled");
     scrollButton.classList.add("animate__fadeIn");
   }
-}
+};
 
 function debounce(callback, interval) {
   let debounceTimeoutId;
@@ -65,39 +71,53 @@ function debounce(callback, interval) {
 }
 
 applyTopOfPageClass();
-window.addEventListener('scroll', debounce(applyTopOfPageClass, 300));
+window.addEventListener("scroll", debounce(applyTopOfPageClass, 300));
 
 // find all section elements
 
 const bioSection = document.getElementById("bio");
 const workSection = document.getElementById("work");
 
-// add smooth scrooling onclick listener of button
+// add smooth scrolling onclick listener of button
 
 const scrollAnchor = document.querySelector(".scroll-button");
 
-const scrollHandler = event => { 
+const scrollHandler = (event) => {
   event.preventDefault();
-  bioSection.scrollIntoView({behavior: "smooth"});
-}
+  bioSection.scrollIntoView({ behavior: "smooth" });
+};
 
-scrollAnchor.addEventListener('click', scrollHandler);
+scrollAnchor.addEventListener("click", scrollHandler);
 
 // add smooth scrolling on nav buttons
 
 const bioNavButton = document.querySelector(".bio");
 const workNavButton = document.querySelector(".work");
 
-const bioNavButtonScrollHandler = event => { 
+const bioNavButtonScrollHandler = (event) => {
   event.preventDefault();
-  bioSection.scrollIntoView({behavior: "smooth"});
-}
+  bioSection.scrollIntoView({ behavior: "smooth" });
+};
 
-bioNavButton.addEventListener('click', bioNavButtonScrollHandler);
+bioNavButton.addEventListener("click", bioNavButtonScrollHandler);
 
-const workNavButtonScrollHandler = event => { 
+const workNavButtonScrollHandler = (event) => {
   event.preventDefault();
-  workSection.scrollIntoView({behavior: "smooth"});
-}
+  workSection.scrollIntoView({ behavior: "smooth" });
+};
 
-workNavButton.addEventListener('click', workNavButtonScrollHandler);
+workNavButton.addEventListener("click", workNavButtonScrollHandler);
+
+// add smooth scrolling on work section link in bio
+
+const workSectionLinkInBio = document.querySelector(".work-section-link");
+
+const workSectionLinkInBioScrollHandler = (event) => {
+  event.preventDefault();
+  workSection.scrollIntoView({ behavior: "smooth" });
+};
+
+workSectionLinkInBio.addEventListener(
+  "click",
+  workSectionLinkInBioScrollHandler
+);
