@@ -223,6 +223,20 @@ footer {
   }
 }
 
+/* Vertical response behavior for very short viewports (e.g., phone screens on landscape) */
+
+@media (max-height: 600px) {
+  .section-container {
+    height: 600px;
+  }
+}
+
+@media (max-height: 450px) {
+  footer {
+    height: 450px;
+  }
+}
+
 /* Column width overrides */
 
 @media (max-width: 749px) and (min-width: 550px) {
