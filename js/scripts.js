@@ -47,7 +47,6 @@ const applyTopOfPageClass = () => {
     window.scrollY !== 0 &&
     scrollButton.classList.contains("animate__fadeIn")
   ) {
-    console.log("not top");
     scrollButton.classList.remove("animate__fadeIn");
     scrollButton.classList.add("animate__fadeOut");
     setTimeout(() => scrollButton.classList.add("disabled"), 1000);
@@ -55,7 +54,6 @@ const applyTopOfPageClass = () => {
     window.scrollY === 0 &&
     !scrollButton.classList.contains("animate__fadeIn")
   ) {
-    console.log("top");
     scrollButton.classList.remove("animate__fadeOut", "disabled");
     scrollButton.classList.add("animate__fadeIn");
   }
