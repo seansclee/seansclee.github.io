@@ -84,14 +84,19 @@
         <div class="row">
           <div class="one-half column header-column">
             <img
-              class="profile-pic u-max-full-width header-content"
+              class="profile-pic u-max-full-width header-image"
               src="images/headshot.jpg"
             />
           </div>
           <div class="one-half column header-column">
-            <div class="header-content">
-              <h3 class="heading" id="heading"></h3>
-              <p>
+            <div>
+              <h3
+                class="heading animate__animated animate__fadeInDown animate__delay-2s"
+                id="heading"
+              ></h3>
+              <p
+                class="heading-paragraph animate__animated animate__fadeInRightBig animate__delay-2s"
+              >
                 I'm Sean. I'm a
                 <a
                   href="https://i.imgur.com/18c9Wg2.jpg"
@@ -104,7 +109,6 @@
                 greatest in web development technologies.
               </p>
             </div>
-            <p></p>
           </div>
         </div>
       </div>
@@ -323,10 +327,11 @@
 
     <script>
       ScrollReveal().reveal(".nav-element", { delay: 200, interval: 200 });
-      ScrollReveal().reveal(".header-content", { delay: 1500 });
+      ScrollReveal().reveal(".header-image", { delay: 1500 });
       ScrollReveal().reveal(".bio-content", { delay: 200 });
       ScrollReveal().reveal(".work-content", { delay: 200, interval: 200 });
       ScrollReveal().reveal(".footer-content", { delay: 200 });
+      ScrollReveal().reveal(".copyright", { delay: 200 });
     </script>
 
     <!-- Javascript
