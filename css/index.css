@@ -128,7 +128,7 @@ img {
 }
 
 .work-content a[href] img:hover {
-  box-shadow: 0px 0px 5px 0px #a0a0a0; /* only darken box shadow on preview image if it is a link */
+  box-shadow: 0px 0px 5px 0px #888888; /* only darken box shadow on preview image if it is a link */
 }
 
 .work-content-header {
