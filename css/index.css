@@ -224,7 +224,11 @@ footer {
 
 @media (max-height: 600px) {
   .section-container {
-    height: 600px;
+    height: 675px;
+  }
+
+  .bio-section.section-container {
+    padding-bottom: 160px;
   }
 }
 
