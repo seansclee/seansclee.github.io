@@ -15,20 +15,20 @@ let greeting =
 const random = Math.random();
 
 // set 'easter egg' greetings; try to guess the reference...
-if (random < 0.01) {
-  // approx. 1% chance
+if (random < 0.03) {
+  // ~3% chance
   greeting = "All your base are belong to us";
-} else if (random > 0.01 && random < 0.04) {
-  // approx. 3% chance
+} else if (random > 0.03 && random < 0.1) {
+  // ~7% chance
   greeting = "Code monkey like Tab and Mountain Dew";
-} else if (random > 0.04 && random < 0.07) {
-  // approx. 3% chance
+} else if (random > 0.1 && random < 0.15) {
+  // ~5% chance
   greeting = "Hello Mr. Anderson";
-} else if (random > 0.1 && random < 0.2) {
-  // approx. 10% chance
+} else if (random > 0.16 && random < 0.24) {
+  // ~8% chance
   greeting = "Hello, friend";
-} else if (random > 0.99) {
-  // approx. 1% chance
+} else if (random > 0.98) {
+  // ~2% chance
   greeting = "I'm a computa";
 }
 
