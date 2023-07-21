@@ -1,4 +1,4 @@
-# seanslee92.github.io
+# seansclee.github.io
 (new) personal site
 
 used <a href="https://acahir.github.io/Barebones/" target="_blank" rel="noopener noreferrer">Barebones</a> as boilerplate
